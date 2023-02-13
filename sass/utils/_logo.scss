@@ -1,0 +1,12 @@
+.logo__ws {
+  font-family: "Raleway";
+  font-size: 26px;
+  color: var(--letters_and_logo_color_black);
+
+  &--white {
+    color: var(--letters_and_logo_color_white);
+  }
+}
+.logo__color {
+  color: var(--link_and_button_color);
+}

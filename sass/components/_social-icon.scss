@@ -1,0 +1,30 @@
+.social__icon {
+  border-radius: 50%;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+.social__icon:hover,
+.social__icon:focus {
+  background-color: var(--link_and_button_color);
+  color: var(--letters_and_logo_color_white);
+  outline: none;
+}
+.current__color--svg {
+  fill: currentColor;
+}
+.current__color--svg > use {
+  fill: currentColor;
+}

@@ -1,0 +1,28 @@
+.what__we__do--list {
+  display: flex;
+  gap: 30px;
+}
+.what__we__do--h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.wwd__list--box {
+  position: relative;
+}
+.wwd__list--p {
+  color: var(--letters_and_logo_color_white);
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
