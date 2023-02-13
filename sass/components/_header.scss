@@ -1,6 +1,7 @@
 .header {
   padding: 25px 0;
   border-bottom: 1px solid #ececec;
+  width: 100%;
   &__help {
     display: flex;
     align-items: center;
@@ -8,6 +9,11 @@
   &__nav {
     display: flex;
     align-items: center;
+  }
+  @media (max-width: $mobile-size) {
+    &__nav {
+      padding-left: 15px;
+    }
   }
   &__link {
     font-weight: 500;
@@ -51,6 +57,23 @@
     padding: 0;
     margin-left: 93px;
   }
+  @media (min-width: 768px) and (max-width: 900px) {
+    &__kontakt {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 767px) {
+    &__list {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    &__kontakt {
+      display: none;
+    }
+  }
 }
 .background__header {
   text-align: center;
@@ -61,11 +84,52 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background-header.jpg");
+    url("../images/bg-image/mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image/mobile@2.jpg");
+  }
+  @media (min-width: 768px) {
+    background-image: url("../images/bg-image/tablet.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image/tablet@2.jpg");
+  }
+  @media (min-width: 12000px) {
+    background-image: url("../images/bg-image/detskop.jpg");
+    height: 37.5rem;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image/detskop@2.jpg");
+  }
+}
+@media (max-width: $mobile-size) {
+  .background__header {
+    height: 400px;
+    padding: 118px 0;
+  }
 }

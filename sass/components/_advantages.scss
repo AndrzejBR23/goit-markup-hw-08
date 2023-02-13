@@ -39,3 +39,19 @@
   line-height: 1.71;
   color: #757575;
 }
+
+@media (max-width: 570px) {
+  .adv__list > p {
+    width: 100%;
+  }
+}
+@media (max-width: $mobile-size) {
+  .advantages {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .adv__list {
+    width: 354px;
+  }
+}

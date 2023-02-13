@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Zadanie domowe nr:6</title>
+    <title>Zadanie domowe nr:8</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -54,6 +54,11 @@
             +48 111 111 111
           </a>
         </div>
+        <button class="menu-toggle js-open-menu">
+          <svg class="icon-menu-svg" width="40" height="40">
+            <use href="images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -158,12 +163,20 @@
           <ul class="our__team--ul">
             <li class="team__list">
               <img
-                src="images/john1.jpg"
+                srcset="
+                  ./images/worker_1/mb@1x.jpg 450w,
+                  ./images/worker_1/mb@2x.jpg 900w,
+                  ./images/worker_1/tb@1x.jpg 354w,
+                  ./images/worker_1/tb@2x.jpg 708w,
+                  ./images/worker_1/dt@1x.jpg 270w,
+                  ./images/worker_1/dt@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                src="./images/worker_1/dt@1x.jpg"
                 alt="John Doe"
-                width="270"
-                height="260"
               />
-              <div>
+              <div class="team__list--intormation">
                 <h3 class="team__list--h3">John Doe</h3>
                 <p class="team__list--p">Product Designer</p>
                 <ul class="social__icon--box">
@@ -200,12 +213,20 @@
             </li>
             <li class="team__list">
               <img
-                src="images/john2.jpg"
+                srcset="
+                  ./images/worker_2/mb@1x.jpg 450w,
+                  ./images/worker_2/mb@2x.jpg 900w,
+                  ./images/worker_2/tb@1x.jpg 354w,
+                  ./images/worker_2/tb@2x.jpg 708w,
+                  ./images/worker_2/dt@1x.jpg 270w,
+                  ./images/worker_2/dt@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                src="./images/worker_2/dt@1x.jpg"
                 alt="John Doe"
-                width="270"
-                height="260"
               />
-              <div>
+              <div class="team__list--intormation">
                 <h3 class="team__list--h3">John Doe</h3>
                 <p class="team__list--p">Frontend Developer</p>
                 <ul class="social__icon--box">
@@ -242,12 +263,20 @@
             </li>
             <li class="team__list">
               <img
-                src="images/john3.jpg"
+                srcset="
+                  ./images/worker_3/mb@1x.jpg 450w,
+                  ./images/worker_3/mb@2x.jpg 900w,
+                  ./images/worker_3/tb@1x.jpg 354w,
+                  ./images/worker_3/tb@2x.jpg 708w,
+                  ./images/worker_3/dt@1x.jpg 270w,
+                  ./images/worker_3/dt@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                src="./images/worker_3/dt@1x.jpg"
                 alt="John Doe"
-                width="270"
-                height="260"
               />
-              <div>
+              <div class="team__list--intormation">
                 <h3 class="team__list--h3">John Doe</h3>
                 <p class="team__list--p">Marketing</p>
                 <ul class="social__icon--box">
@@ -284,12 +313,20 @@
             </li>
             <li class="team__list">
               <img
-                src="images/john4.jpg"
+                srcset="
+                  ./images/worker_4/mb@1x.jpg 450w,
+                  ./images/worker_4/mb@2x.jpg 900w,
+                  ./images/worker_4/tb@1x.jpg 354w,
+                  ./images/worker_4/tb@2x.jpg 708w,
+                  ./images/worker_4/dt@1x.jpg 270w,
+                  ./images/worker_4/dt@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                src="./images/worker_4/dt@1x.jpg"
                 alt="John Doe"
-                width="270"
-                height="260"
               />
-              <div>
+              <div class="team__list--intormation">
                 <h3 class="team__list--h3">John Doe</h3>
                 <p class="team__list--p">UI Designer</p>
                 <ul class="social__icon--box">
@@ -510,6 +547,14 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

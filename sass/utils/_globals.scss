@@ -4,6 +4,18 @@ body {
   color: var(--letters_and_logo_color_black);
   font-size: 14px;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  // max-width: 1170px;
+  width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -37,9 +49,15 @@ address {
   padding-bottom: 94px;
 }
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
+  // padding: 0 15px;
+}
+@media (max-width: $tablet-size) {
+  .container {
+    padding: o 15px;
+  }
 }
 .padding__top--0 {
   padding-top: 0;
